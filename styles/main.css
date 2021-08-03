@@ -1,0 +1,149 @@
+:root{
+    font-size: 16px;
+    font-family: Rubik;
+
+    --tiny-gap: .5rem;
+    --small-gap: 1rem;
+    --medium-gap: 1.5rem;
+    --large-gap: 2rem;
+    --huge-gap: 3rem;
+
+    --bg-prim: rgba(30, 30, 30, 1);
+    --bg-sec: rgba(69, 69, 69, 1);
+    --text-prim: rgba(255, 255, 255, .9);
+    --text-sec: rgba(10, 3, 3, .7)
+    
+    
+}
+body{background-color: var(--bg-prim);}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--text-prim);
+}
+
+
+/* ================================================= */
+/* Landing */
+/* ================================================= */
+
+
+.landing{
+    border: 0px solid red;
+    height: 100vh;
+    background-image: url(../assets/LandingBG.JPG) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.landing > *{
+    height: 100vh;
+    z-index: 10;
+}
+
+.dummy-div-for-bg-color{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    z-index: 0;
+
+    background-color: #C6A1FF;
+    mix-blend-mode: color;
+}
+
+
+/* General Btn style */
+
+.btns{
+    border: 0px solid red;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn{
+    border: 0px solid red;
+    width: 10%;
+    min-width: 180px;
+    text-align: center;
+    padding: var(--large-gap) var(--huge-gap);
+    margin-bottom: calc(var(--huge-gap) * 3);
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50px;
+
+    z-index: 2;
+    font-size: 1.2rem;
+
+    transition: box-shadow ease .5s;
+}
+
+.web-btn{
+    background: #4A95B5B2;
+}
+
+.design-btn{
+    background: #AF68C870;
+
+}
+
+/* ----------------- */
+
+.hello{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hello img{
+    width: 10%;
+    min-width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(97, 97, 97, 1);
+}
+
+.hello h1{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.hello p{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--huge-gap);
+}
+
+.hello > *{
+    border: 0px solid cyan;
+    margin-top: var(--medium-gap);
+}
+
+/* Hovers */
+
+.design-btn:hover{
+    box-shadow: 
+       0 10px 0 #85529770,
+       0 20px 0 #784d8870,
+       0 30px 0 #714f7e70
+    ;
+}
+
+.web-btn:hover{
+    box-shadow:
+       0 10px 0 #4A95B5B2,
+       0 20px 0 #457c94b2,
+       0 30px 0 #426675b2
+    ;
+}
+
+
