@@ -1,23 +1,15 @@
-.progs{
-
-}
-
-body{
-    visibility: visible;
-}
-
 .progs h1{
     border: 0px solid red;
     font-size: 3rem;
     font-weight: 400;
     text-align: center;
-    padding: .5em 0;
+    padding: var(--medium-gap) 0;
     border-bottom: 2px solid rgba(0, 0, 0, .5);
 }
 
 .progs p{
     border: 0px solid red;
-    padding: .5em 0;
+    padding: var(--medium-gap) 0;
     font-size: 2rem;
     text-align: center;
 }
@@ -28,14 +20,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: .5em 0;
+    padding-bottom: var(--large-gap);
     border-bottom: 2px solid rgba(0, 0, 0, .5);
 
 }
 
 .prog-icons{
     border: 0px solid cyan;
-    margin: 1em .5em;
+    margin: 0 var(--small-gap);
     min-width: 100px;
     min-height: 100px;
     border-radius: 50%;
@@ -93,6 +85,7 @@ body{
 
 .ps-work{
     border: 0px dotted blue;
+    margin-bottom: var(--large-gap);
 }
 
 .ps-work p{
@@ -112,7 +105,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: auto;
 
-    grid-auto-flow: dense;
+    grid-auto-flow: row;
     gap: 1em;
 }
 
@@ -128,28 +121,22 @@ body{
     justify-content: center;
 }
 
-
 .normal{
-    grid-column: span 4;
+    grid-column: span 6;
     grid-row: span 2;
 }
 
-.tall{
-    grid-column: span 5;
-    grid-row: span 5;
-}
-
 .wide{
-    grid-column: span 5;
+    grid-column: span 6;
     grid-row: span 2;
 }
 
 .ultrawide{
-    grid-column: span 8;
+    grid-column: span 12;
     grid-row: span 2;
 }
 
 .big{
-    grid-column: span 4;
+    grid-column: span 5;
     grid-row: span 2;
 }

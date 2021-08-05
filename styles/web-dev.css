@@ -1,0 +1,137 @@
+.web-dev{
+    border: 0px solid red;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.web-dev h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    padding: var(--medium-gap);
+    border: 0px solid cyan;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+.languages{
+    border: 0px solid yellow;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--large-gap) 0;
+}
+
+.lang{
+    border: 0px solid red;
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 0 var(--small-gap);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.html{
+    background-color: #5193A8;
+    box-shadow: 0 0 10px #6d9dac;
+}
+
+.css{
+    background-color: #AF68C8;
+    box-shadow: 0 0 10px #b07ec2;
+
+}
+
+.js{
+    background-color: #FFA800;
+    box-shadow: 0 0 10px #ffcb64;
+
+}
+
+.loading{
+    font-size: 1.2rem;
+    background-color: gray;
+    box-shadow: 0 0 10px;
+}
+
+/* ================================================= */
+/* GitHub */
+/* ================================================= */
+
+.github{
+    border: 0px dashed yellow;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: var(--huge-gap);
+}
+
+.github p{
+    border: 0px solid red;
+    font-size: 2rem;
+    text-align: center;
+    padding: var(--medium-gap) 0;
+}
+
+.github-acc img,.github-acc{
+    width: clamp(200px, 400px, 440px);
+    height: clamp(200px, 400px, 440px);
+    border-radius: 50%;
+
+    transition: box-shadow ease .5s;
+}
+
+/* ================================================= */
+/* Footer */
+/* ================================================= */
+
+.footer{
+    background-color: #111;
+}
+
+.footer>*{
+    margin: var(--medium-gap) var(--large-gap);
+}
+
+.footer img,.footer a{
+    border-radius: 50%;
+    width: clamp(50px, 80px, 100px);
+    height: clamp(50px, 80px, 100px);
+}
+
+.footer-wrapper{
+    border: 0px solid red;
+    width: 90%;
+    padding: var(--medium-gap) 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* hovers */
+
+.github-acc img:hover{
+    box-shadow: 20px 0 2px #111,
+                40px 0 4px #222,
+                60px 0 6px #333,
+                80px 0 10px #444,
+                
+                -20px 0 2px #111,
+                -40px 0 4px #222,
+                -60px 0 6px #333,
+                -80px 0 10px #444
+    ;
+}
+BRB! :D
