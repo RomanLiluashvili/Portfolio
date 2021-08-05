@@ -8,8 +8,9 @@
     --large-gap: 2rem;
     --huge-gap: 3rem;
 
-    --bg-prim: rgba(30, 30, 30, 1);
-    --bg-sec: rgba(69, 69, 69, 1);
+    --bg-prim: #161619;
+    --bg-sec: #202233;
+    --bg-sec2: #222D47;
     --text-prim: rgba(255, 255, 255, .9);
     --text-sec: rgba(10, 3, 3, .7)
     

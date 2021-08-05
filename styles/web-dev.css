@@ -10,17 +10,17 @@ body{
 }
 
 .web-dev h1{
+    background-color: var(--bg-sec);
     font-size: 3rem;
     text-align: center;
     font-weight: 400;
     padding: var(--medium-gap);
     border: 0px solid cyan;
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
 }
 
 .languages{
     border: 0px solid yellow;
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    background-color: var(--bg-sec2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,9 +110,13 @@ body{
     height: clamp(50px, 80px, 100px);
 }
 
+.footer img:hover{
+    mix-blend-mode: hard-light;
+}
+
 .footer-wrapper{
     border: 0px solid red;
-    width: 90%;
+    width: 80%;
     padding: var(--medium-gap) 0;
     margin: 0 auto;
     display: flex;
@@ -134,4 +138,3 @@ body{
                 -80px 0 10px #444
     ;
 }
-BRB! :D
