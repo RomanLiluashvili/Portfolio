@@ -33,8 +33,8 @@
 .prog-icons{
     border: 0px solid cyan;
     margin: 0 var(--small-gap);
-    min-width: 100px;
-    min-height: 100px;
+    width: clamp(50px, 100px, 120px);
+    height: clamp(50px, 100px, 120px);
     border-radius: 50%;
     font-weight: 500;
 
@@ -229,4 +229,60 @@
     box-shadow: 0px 0px 0 5px #161619;
 }
 
+/* Allmighty MEDIAQUERIES */
+
+@media (max-width: 1720px){
+    .vefx,.sunset{
+        grid-column: span 8;
+        grid-row: span 4;
+    }
+    
+}
+
+@media (max-width: 960px){
+    :root{
+        font-size: 14px;
+    }
+    .big,.colo1,.colo2,.ural{
+        grid-column: span 9;
+    }
+
+    .vefx{
+        background-position: 60% 100%;
+    }
+}
+
+@media (max-width: 500px){
+
+    :root{
+        font-size: 12px;
+    }
+
+    .ps-work-container{
+        width: 95%;
+    }
+
+    .wide{
+        background-position: 20% 100%;
+    }
+
+    .big,.colo1,.colo2,.ural{
+        grid-column: span 8;
+    }
+
+    .vefx,.sunset{
+        grid-column: span 8;
+        grid-row: span 3;
+    }
+
+    .vefx{
+        background-position: 90% 100%;
+    }
+
+    .prog-icons{
+        margin: .5em;
+        width: clamp(50px, 70px, 120px);
+        height: clamp(50px, 70px, 120px);
+    }
+}
 

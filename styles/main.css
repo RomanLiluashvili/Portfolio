@@ -43,8 +43,6 @@ body{background-color: var(--bg-prim);}
 
     display: flex;
     flex-direction: column;
-
-    transition: background-position ease .5s;
 }
 
 .landing > *{
@@ -76,7 +74,8 @@ body{background-color: var(--bg-prim);}
 .btn{
     border: 0px solid red;
     width: 10%;
-    min-width: 180px;
+    max-width: 200px;
+    min-width: 170px;
     text-align: center;
     padding: var(--large-gap) var(--huge-gap);
     margin-bottom: calc(var(--huge-gap) * 3);
@@ -95,7 +94,6 @@ body{background-color: var(--bg-prim);}
 
 .design-btn{
     background: #AF68C870;
-
 }
 
 /* ----------------- */
@@ -109,8 +107,7 @@ body{background-color: var(--bg-prim);}
 }
 
 .hello img{
-    width: 10%;
-    min-width: 150px;
+    width: clamp(150px, 200px, 400px);
     border-radius: 50%;
     border: 5px solid rgba(97, 97, 97, 1);
 }
@@ -147,6 +144,41 @@ body{background-color: var(--bg-prim);}
        0 20px 0 #457c94b2,
        0 30px 0 #426675b2
     ;
+}
+
+
+/* Allmighty MEDIAQUERIES */
+
+@media (max-width: 800px){
+    :root{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 478px){
+    :root{
+        font-size: 11px;
+    }
+
+    .hello{
+        border: 0px solid red;
+        justify-content: center;
+    }
+
+    .btns{
+        border: 0px solid red;
+        flex-direction: column;
+    }
+
+    .btns > *{
+        margin-bottom: 1em;
+    }
+
+    .hello img{
+        width: clamp(100px, 150px, 300px);
+        border-radius: 50%;
+        border: 5px solid rgba(97, 97, 97, 1);
+    }
 }
 
 
