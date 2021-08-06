@@ -43,8 +43,7 @@
     justify-content: center;
     
 
-    transition: transform ease .4s,
-                box-shadow ease .4s;
+    transition: transform ease .4s;
 }
 
 .prog-icons:hover{
@@ -88,7 +87,6 @@
 /* ================================================= */
 
 .ps-work{
-    border: 0px dotted blue;
     margin-bottom: var(--huge-gap);
 }
 
@@ -115,13 +113,13 @@
 
 /* --- */
 
-.ps-work-container a:hover{
-    opacity: .5;
-}
-
 .image{
     background-position: center center;
-    transition: opacity ease .2s;
+    transition: background-image ease .1s;
+    box-sizing: border-box;
+    padding: 1em;
+
+
 }
 
 .image img{
@@ -131,13 +129,13 @@
 }
 
 .normal{
-    background-color: gold;
     grid-column: span 4;
     grid-row: span 4;
 }
+/* all hovers and background image changing stuff */
 
 .wide{ /*3D*/
-    background-color: hotpink;
+    color: rgb(192, 63, 63);
     grid-column: span 8;
     grid-row: span 4;
 
@@ -146,7 +144,6 @@
 }
 
 .ultrawide{ /*vefxistyaosani*/
-    background-color: cyan;
     grid-column: span 6;
     grid-row: span 3;
 
@@ -154,13 +151,21 @@
     background-size: cover;
 }
 
+.vefx{
+    color: rgb(192, 63, 63);
+}
+
 .sunset{
     background-image: url(../assets/sunset.jpg);
     background-size: cover;
 }
 
+.sunset:hover{
+    background-image: url(../assets/before/sunset-before.jpg);
+}
+
 .big{ /* Lenin */
-    background-color: pink;
+    color: rgb(192, 63, 63);
     grid-column: span 4;
     grid-row: span 4;
 
@@ -169,8 +174,13 @@
 }
 
 .colo1{
+    color: var(--text-sec);
     background-image: url(../assets/colossus1.jpg);
     background-size: cover;
+}
+
+.colo1:hover{
+    background-image: url(../assets/before/colossus1-before1.jpg);
 }
 
 .colo2{
@@ -178,9 +188,17 @@
     background-size: cover;
 }
 
+.colo2:hover{
+    background-image: url(../assets/before/colossus2-before1.jpg);
+}
+
 .ural{
     background-image: url(../assets/ural.jpg);
     background-size: cover;
+}
+
+.ural:hover{
+    background-image: url(../assets/before/ural-before.jpg);
 }
 
 /* ================================================= */
