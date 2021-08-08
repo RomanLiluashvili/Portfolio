@@ -132,7 +132,7 @@
     grid-column: span 4;
     grid-row: span 4;
 }
-/* all hovers and background image changing stuff */
+/* background image changing stuff */
 
 .wide{ /*3D*/
     color: rgb(192, 63, 63);
@@ -151,19 +151,6 @@
     background-size: cover;
 }
 
-.vefx{
-    color: rgb(192, 63, 63);
-}
-
-.sunset{
-    background-image: url(../assets/sunset.jpg);
-    background-size: cover;
-}
-
-.sunset:hover{
-    background-image: url(../assets/before/sunset-before.jpg);
-}
-
 .big{ /* Lenin */
     color: rgb(192, 63, 63);
     grid-column: span 4;
@@ -173,32 +160,87 @@
     background-size: cover;
 }
 
+
+
+.sunset{
+    background-image: url(../assets/sunset.jpg);
+    background-size: cover;
+
+    animation: changeBgSunset 1s ease-in-out forwards infinite alternate;
+
+}
+
+@keyframes changeBgSunset {
+    0%{
+        background-image: url(../assets/sunset.jpg);
+    }
+    30%{
+        background-image: url(../assets/sunset.jpg);
+    }
+    100%{
+        background-image: url(../assets/before/sunset-before.jpg);
+    }
+}
+
 .colo1{
     color: var(--text-sec);
     background-image: url(../assets/colossus1.jpg);
     background-size: cover;
+
+    animation: changeBgColo1 1s ease-in-out forwards infinite alternate;
+
 }
 
-.colo1:hover{
-    background-image: url(../assets/before/colossus1-before1.jpg);
+@keyframes changeBgColo1 {
+    0%{
+        background-image: url(../assets/colossus1.jpg);
+    }
+    30%{
+        background-image: url(../assets/colossus1.jpg);
+    }
+    100%{
+        background-image: url(../assets/before/colossus1-before1.jpg);
+    }
 }
+
 
 .colo2{
     background-image: url(../assets/colossus2.jpg);
     background-size: cover;
+
+    animation: changeBgColo2 1s ease-in-out forwards infinite alternate;
 }
 
-.colo2:hover{
-    background-image: url(../assets/before/colossus2-before1.jpg);
+@keyframes changeBgColo2 {
+    0%{
+        background-image: url(../assets/colossus2.jpg);
+    }
+    30%{
+        background-image: url(../assets/colossus2.jpg);
+    }
+    100%{
+        background-image: url(../assets/before/colossus2-before1.jpg);
+    }
 }
+
 
 .ural{
     background-image: url(../assets/ural.jpg);
     background-size: cover;
+
+    animation: changeBgUral 1s ease-in-out forwards infinite alternate;
 }
 
-.ural:hover{
-    background-image: url(../assets/before/ural-before.jpg);
+@keyframes changeBgUral {
+    0%{
+        background-image: url(../assets/ural.jpg);
+    }
+    30%{
+        background-image: url(../assets/ural.jpg);
+    }
+    100%{
+        background-image: url(../assets/before/ural-before.jpg);
+    }
 }
 
 /* ================================================= */
