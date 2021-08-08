@@ -160,7 +160,7 @@
     background-size: cover;
 }
 
-
+/* animations */
 
 .sunset{
     background-image: url(../assets/sunset.jpg);
@@ -169,7 +169,6 @@
     animation: changeBgSunset 1s ease-in-out forwards infinite alternate;
 
 }
-
 @keyframes changeBgSunset {
     0%{
         background-image: url(../assets/sunset.jpg);
@@ -182,6 +181,7 @@
     }
 }
 
+
 .colo1{
     color: var(--text-sec);
     background-image: url(../assets/colossus1.jpg);
@@ -190,7 +190,6 @@
     animation: changeBgColo1 1s ease-in-out forwards infinite alternate;
 
 }
-
 @keyframes changeBgColo1 {
     0%{
         background-image: url(../assets/colossus1.jpg);
@@ -210,7 +209,6 @@
 
     animation: changeBgColo2 1s ease-in-out forwards infinite alternate;
 }
-
 @keyframes changeBgColo2 {
     0%{
         background-image: url(../assets/colossus2.jpg);
@@ -230,7 +228,6 @@
 
     animation: changeBgUral 1s ease-in-out forwards infinite alternate;
 }
-
 @keyframes changeBgUral {
     0%{
         background-image: url(../assets/ural.jpg);
