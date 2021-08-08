@@ -26,7 +26,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: var(--large-gap);
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    border-bottom: 0px solid rgba(0, 0, 0, .5);
 
 }
 
@@ -250,6 +250,12 @@
     .vefx{
         background-position: 60% 100%;
     }
+
+    .prog-icons{
+        margin: .5em;
+        width: clamp(50px, 80px, 120px);
+        height: clamp(50px, 80px, 120px);
+    }
 }
 
 @media (max-width: 500px){
@@ -264,14 +270,15 @@
 
     .wide{
         background-position: 20% 100%;
+        grid-column: span 4;
     }
 
     .big,.colo1,.colo2,.ural{
-        grid-column: span 8;
+        grid-column: span 4;
     }
 
     .vefx,.sunset{
-        grid-column: span 8;
+        grid-column: span 4;
         grid-row: span 3;
     }
 
